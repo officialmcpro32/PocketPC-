@@ -1,4 +1,5 @@
 "use strict";
+var hardcore = false;
 
 //Variables
 
@@ -42,6 +43,7 @@ Block.setLightOpacity(199, 1);
 
 ModPE.setItem(380, "cauldron", 0, "Cauldron");
 ModPE.setItem(399, "nether_star", 0, "Nether Star");
+ModPE.setitem(500,"ender_pearl",0,"Ender Pearl", 16);
 ModPE.setItem(408, "hopper", 0, "Hopper");
 ModPE.setItem(426, "end_crystal", 0, "End Crystal");
 ModPE.setItem(437, "dragon_breath", 0, "Dragon's Breath");
@@ -122,5 +124,12 @@ setTile(9, x, y+1, z);
 }
 }
 }
+
+//modTick
+
+function modTick(){
+if(hardcore==true){
+//I"ll work on it
+}}
 
 //Piston Code
